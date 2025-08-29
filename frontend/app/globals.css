@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  /* 👇 this line enforces opacity: 1 globally */
+  * {
+    opacity: 1;
+  }
+}
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+.prose {
+  max-width: none;
+}
+
+.prose h3 {
+  font-family: var(--font-playfair);
+}
